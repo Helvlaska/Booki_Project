@@ -1,7 +1,11 @@
 body {
 
+    margin: 0% 2% 0% 2%;
     font-family: 'Raleway';
+    font-size: 12px;
+    color: black;
     box-sizing: border-box;
+   
 }
 
 /* -----------HEADER------------*/
@@ -16,16 +20,15 @@ header {
 img {
 
     height: 50px;
-    margin-left: 20px;
     margin-top: 30px;
+
 }
 
 nav ul {
 
     display: flex;
     list-style-type: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     
 }
 
@@ -36,29 +39,187 @@ nav li {
     
 }
 
-a {
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+nav a {
+
+    padding: 50px 20px 0px 20px ;
     text-decoration: none;
     color: black;
 }
 
-a:visited {
+nav a:visited {
     
     border-top: 1px solid #0065fc;
     
 }
 
-a:hover, a:focus, a:active {
+nav a:hover, nav a:focus, nav a:active {
 
     border-top: 1px solid #0065fc;
     color: #0065fc;
+}    
+
+/*-----------DIV MENU-----------*/
+
+h1 {
+
+    font-weight: 800;
+    font-size: large;
+    margin: 20px 0px 5px 0px;
 }
 
+p {
+    
+    font-size: small;
+    margin: 5px 0px 15px 0px;
+
+}
+
+form {
+
+    margin: 20px 0px 5px 0px;
+
+}
+
+.search {
+
+    display: flex;
+}
+
+label {
+
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px ;
+    margin: 0px;
+}
+
+input[type="text"] {
+
+    font-weight: bold;
+    color: black;
+    border: 1px solid #F2F2F2;
+    padding: 12px;
+    margin: 0px;
+    outline: none;
+}
+
+.searchfirst {
+
+    font-family: "Raleway";
+    text-align: center;
+    background-color: #0065fc;
+    color: white;
+    padding: 12px;
+    border-radius: 0px 10px 10px 0px ;
+    border-width: 0px;
+    border-color: #0065fc;
+    margin: 0px;
+   
+}
+
+.searchmedia {
+
+    text-align: center;
+    background-color: white;
+    color: white;
+    padding: 12px;
+    border-radius: 0px 10px 10px 0px ;
+    border-width: 0px;
+    border-color: white;
+    margin: 0px;
+    margin-block-start: 0px;
+
+}
+
+h2 {
+
+    font-size: medium;
+    font-weight: bold;
+
+}
+.filtres {
+
+    display: flex;
+    align-items: baseline;
+
+}
+
+.filtres ul {
+    
+    display: flex;
+    padding-inline-start: 10px;
+    margin: 5px;
+
+}
+
+.filtres li {
+    
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    padding: 0px 20px 0px 0px;
+    margin: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.filtres li:hover {
+
+    padding: 0px 20px 0px 0px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #deebff;
+}
+
+.filtres i {
+
+    background-color: #deebff;
+    color: #0065fc;
+    padding: 10px;
+    margin-right:20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.filtres a {
+
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    
+}
+
+.info {
+
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0px 10px 0px;
+    margin-block-start: 10px;
+
+}
+
+.info i {
+
+    color: #0065fc;
+}
+ .info p {
+
+    margin-left: 10px;
+ }
+
+ /* ---------  -------*/
 
 @media screen and (max-width:768px) {
     
+    body {
+
+        font-size: 16px;
+        margin: 30px 20px 0px 20px;
+    }
+/*------HEADER------*/
+
     header {
     
         flex-direction: column;
@@ -68,9 +229,7 @@ a:hover, a:focus, a:active {
     
     img {
     
-        margin-bottom: 30px;
-        margin-top: 30px;
-        margin-left: 45px;
+        margin: 0px 0px 20px 45px;
         
     }
     
@@ -109,8 +268,79 @@ a:hover, a:focus, a:active {
         border-bottom: 1px solid #0065fc;
         color: #0065fc;
     }
+
+    .menu {
+
+        flex-direction: column;
+        margin: 30px 20px 10px 20px ;
+    }
+
+/*--------DIV MENU--------*/
+    h1 {
+
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    p {
+
+        margin: 0px;
     
+    }
+
+    input[type="text"] {
+
+        width: 80%;
+    }
     
+    .searchmedia {
+
+        text-align: center;
+        background-color: #0065fc;
+        color: white;
+        padding: 12px;
+        border-radius: 0px 10px 10px 0px ;
+        border-width: 0px;
+        border-color: #0065fc;
+        margin: 0px;
+        margin-block-start: 0px;
+
+    }
+
+    .searchfirst {
+
+       display: none;
+       
+    }
+
+    .filtres {
+
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .filtres ul {
+
+        flex-wrap: wrap;
+        margin: 0px;
+        padding-inline-start: 0px;
+
+    }
+
+    .filtres li {
+
+        margin: 10px 5px 10px 0px;
+    }
+
+    .filtres i {
+
+        margin: 0px;
+    }
+
+    .info {
+
+        margin: 10px 0px 10px 0px
+    }
+
 }
-    
-/* ----------HEADER------------*/
+

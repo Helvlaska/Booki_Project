@@ -9,10 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
-        <script src="https://kit.fontawesome.com/a9ce409fee.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css"/>
+        <script src="https://kit.fontawesome.com/a9ce409fee.js" crossorigin="anonymous" defer></script>
+        
+
     </head>
 
     <body>
@@ -27,18 +29,31 @@
                 </ul>
             </nav>
         </header>
-        <section>
+        <div class="menu">
             <h1>Trouver votre hébergements pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
-                <form method="post" action="page.php">
-                   
-                    <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <label for="localisation"></label>  
+            <form method="post" action="page.php">
+                <div class="search">
+                    <label for="iconloca"><i class="fas fa-map-marker-alt"></i></label>  
                     <input type="text" name="localisation" placeholder="Marseille,France"/>
-                    </p>
-                    
-                </form>
-        </section>
+                    <button type="submit" class="searchfirst">Rechercher</button>
+                    <button type="submit" class="searchmedia"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <div class="filtres">
+                <h2>Filtres</h2>
+                <ul class="icon">
+                    <li><i class="fa li fas fa-money-bill"></i><a href="#">Economique</a></li>
+                    <li><i class="fa li fa-solid fa-child"></i><a href="#">Familial</a></li>
+                    <li><i class="fa li fa-solid fa-heart"></i><a href="#">Romantique</a></li>
+                    <li><i class="fa li fa-solid fa-dog"></i><a href="#">Animaux Autorisés</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div>
+       
    </body>
 </html>
