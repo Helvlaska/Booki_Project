@@ -1,180 +1,101 @@
 body {
-
-    margin: 0% 2% 0% 2%;
-    font-family: 'Raleway';
+    padding: 0% 2% 0% 2%;
+    margin: 0%;
+    font-family: "Raleway";
     font-size: 12px;
     color: black;
     box-sizing: border-box;
-   
 }
-
-/* -----------HEADER------------*/
-
+  
 header {
-    
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
+    align-items: baseline;
 }
-
-img {
-
-    height: 50px;
-    margin-top: 30px;
-
+.logo {
+    width: 15%;
 }
-
 nav ul {
-
     display: flex;
     list-style-type: none;
     margin: 0px;
-    
 }
-
-nav li {
-
-    display: flex;
-    margin-right: 50px;
-    
-}
-
 nav a {
-
-    padding: 50px 20px 0px 20px ;
+    display: flex;
     text-decoration: none;
+    padding: 50px 20px 0px 20px ;
     color: black;
+    font-weight: bold;
 }
-
 nav a:visited {
-    
     border-top: 1px solid #0065fc;
-    
 }
-
 nav a:hover, nav a:focus, nav a:active {
-
     border-top: 1px solid #0065fc;
     color: #0065fc;
-}    
-
-/*-----------DIV MENU-----------*/
-
-h1 {
-
-    font-weight: 800;
-    font-size: large;
-    margin: 20px 0px 5px 0px;
 }
 
-p {
-    
+.formulaire h1 {
+    font-weight: 800;
+    font-size: 16px;
+    margin: 20px 0px 5px 0px;
+}
+.formulaire p {   
     font-size: small;
     margin: 5px 0px 15px 0px;
-
 }
-
 form {
-
     margin: 20px 0px 5px 0px;
-
 }
-
 .search {
-
     display: flex;
 }
-
 label {
-
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     padding: 12px;
     border-radius: 10px 0px 0px 10px ;
-    margin: 0px;
 }
-
-input[type="text"] {
-
+input {
     font-weight: bold;
-    color: black;
     border: 1px solid #F2F2F2;
     padding: 12px;
-    margin: 0px;
-    outline: none;
 }
-
-.searchfirst {
-
+button {
     font-family: "Raleway";
-    text-align: center;
-    background-color: #0065fc;
     color: white;
     padding: 12px;
     border-radius: 0px 10px 10px 0px ;
     border-width: 0px;
     border-color: #0065fc;
-    margin: 0px;
-   
+    background-color: #0065fc;
 }
-
-.searchmedia {
-
-    text-align: center;
-    background-color: white;
-    color: white;
-    padding: 12px;
-    border-radius: 0px 10px 10px 0px ;
-    border-width: 0px;
-    border-color: white;
-    margin: 0px;
-    margin-block-start: 0px;
-
-}
-
-h2 {
-
-    font-size: medium;
-    font-weight: bold;
-
+.searchfirst i {
+    display: none;
 }
 .filtres {
-
     display: flex;
     align-items: baseline;
-
 }
-
-.filtres ul {
-    
+.filtres h2 {
+    font-size: 14px;
+    font-weight: 800;
+}
+.filtres ul {   
     display: flex;
-    padding-inline-start: 10px;
-    margin: 5px;
-
+    flex-wrap: wrap;
 }
-
-.filtres li {
-    
+.filtres li {   
     display: flex;
     text-align: center;
     font-weight: bold;
-    font-size: small;
-    padding: 0px 20px 0px 0px;
+    font-size: 14px;
+    padding-right: 20px;
     margin: 10px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
-
-.filtres li:hover {
-
-    padding: 0px 20px 0px 0px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: #deebff;
-}
-
 .filtres i {
-
     background-color: #deebff;
     color: #0065fc;
     padding: 10px;
@@ -182,119 +103,80 @@ h2 {
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
-
 .filtres a {
-
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
     color: black;
     margin: 10px;
-    
 }
-
+.filtres li:hover {
+    background-color: #deebff;
+}
 .info {
-
     display: flex;
     align-items: baseline;
-    margin: 10px 0px 10px 0px;
-    margin-block-start: 10px;
-
 }
-
 .info i {
-
     color: #0065fc;
 }
- .info p {
-
+.info p {
     margin-left: 10px;
- }
-
- /* ---------  -------*/
+}
 
 @media screen and (max-width:768px) {
     
     body {
-
         font-size: 16px;
         margin: 30px 20px 0px 20px;
     }
 /*------HEADER------*/
 
     header {
-    
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    
+    }  
     img {
-    
-        margin: 0px 0px 20px 45px;
-        
-    }
-    
+        margin: 0px 0px 20px 45px;    
+    }   
     nav ul {
-    
-        
         margin-top: 0px;
         margin-bottom: 0px;
-        
     }
-    
     nav li {
-    
         margin-right: 50px;
-        
     }
-    
     nav a {
-
         padding-top: 0px;
         padding-bottom: 10px;
-    
     }
-    
-    
     nav a:visited {
-        
         border-top: none;
         border-bottom: 1px solid #0065fc;
-        
     }
-    
     nav a:hover, nav a:focus, nav a:active {
-        
         border-top: none;
         border-bottom: 1px solid #0065fc;
         color: #0065fc;
     }
-
     .menu {
-
         flex-direction: column;
         margin: 30px 20px 10px 20px ;
     }
 
-/*--------DIV MENU--------*/
+/*--------formulaire--------*/
     h1 {
-
         font-size: 20px;
         margin: 0px;
     }
-
     p {
-
         margin: 0px;
-    
     }
-
     input[type="text"] {
-
         width: 80%;
     }
-    
     .searchmedia {
-
         text-align: center;
         background-color: #0065fc;
         color: white;
@@ -304,43 +186,26 @@ h2 {
         border-color: #0065fc;
         margin: 0px;
         margin-block-start: 0px;
-
     }
-
     .searchfirst {
-
-       display: none;
-       
+        display: none;
     }
-
     .filtres {
-
         flex-direction: column;
         margin-left: 0px;
     }
-
     .filtres ul {
-
         flex-wrap: wrap;
         margin: 0px;
         padding-inline-start: 0px;
-
     }
-
     .filtres li {
-
         margin: 10px 5px 10px 0px;
     }
-
     .filtres i {
-
         margin: 0px;
     }
-
     .info {
-
         margin: 10px 0px 10px 0px
     }
-
 }
-
