@@ -124,6 +124,179 @@ button {
     margin-left: 10px;
 }
 
+.marseille {
+    display: flex; 
+    flex-wrap: wrap;  
+    justify-content: space-between;       
+}
+.marseille h1 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 15px;
+}
+.popular h1 {
+    display: flex;
+    justify-content: space-between;
+}
+.lodging {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 1%;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+.h-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 70%;
+    margin-bottom: 40px;
+}
+.card {
+    background-color: white;
+    box-shadow: 3px 3px 10px lightgray;
+    border-radius: 15px;
+}
+.lodging .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 45%;
+    padding: 4px;
+    margin: 1%;
+}
+.lodging .card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.lodging .describ {
+    margin-left: 5%;
+}
+.describ h3, .hplus {
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin: 3% 0%
+}
+.describ p {
+    width: 100%;
+    margin: 3% 0%;
+}
+.describ .star {
+    color: #F2F2F2;
+}
+.describ .fa-star.blue {
+    color: #0065fc;
+}
+.popular {
+    width: 25%;
+    padding: 1%;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+.p-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+.popular .card {
+    display: flex;
+    width: 97%;
+    height: 32%;
+    margin: 6% 0%;
+    padding: 4px;
+}
+.popular .card img{
+    width: 40%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+.popular .describ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 5%;
+}
+.activity {
+    width: 100%;
+    padding: 1%;
+}
+.activity h3 {
+    font-size: 12px;
+    font-weight: 800;
+    width: 100%;
+    padding: 10px;
+    margin: 3% 0% 3% 5%;
+}
+.a-all {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.bigcard {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 10px lightgray;
+    border-radius: 15px;
+}
+.smallcard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+    height: 100%;
+}
+.smallcard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 10px lightgray;
+    border-radius: 15px;
+}
+.pom {
+    height: 180px;
+}
+.fri {
+    height: 109px;
+}
+.notre {
+    height: 140px;
+}
+.parc {
+    height: 150px;
+}
+.fat {
+    height: 390px;
+}
+.bigcard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.smallcard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
 @media screen and (max-width:768px) {
     
     body {
@@ -166,46 +339,5 @@ button {
     }
 
 /*--------formulaire--------*/
-    h1 {
-        font-size: 20px;
-        margin: 0px;
-    }
-    p {
-        margin: 0px;
-    }
-    input[type="text"] {
-        width: 80%;
-    }
-    .searchmedia {
-        text-align: center;
-        background-color: #0065fc;
-        color: white;
-        padding: 12px;
-        border-radius: 0px 10px 10px 0px ;
-        border-width: 0px;
-        border-color: #0065fc;
-        margin: 0px;
-        margin-block-start: 0px;
-    }
-    .searchfirst {
-        display: none;
-    }
-    .filtres {
-        flex-direction: column;
-        margin-left: 0px;
-    }
-    .filtres ul {
-        flex-wrap: wrap;
-        margin: 0px;
-        padding-inline-start: 0px;
-    }
-    .filtres li {
-        margin: 10px 5px 10px 0px;
-    }
-    .filtres i {
-        margin: 0px;
-    }
-    .info {
-        margin: 10px 0px 10px 0px
-    }
+
 }
