@@ -1,0 +1,131 @@
+@media screen and (max-width:768px) {
+    body{
+        font-size: 18px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        padding: 0%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        justify-content: space-around;
+        padding: 0%;
+    }
+    nav a {
+        padding: 30px 54px 10px 54px;
+        font-weight: normal;
+    }
+    nav a:visited {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
+    }
+    nav a:active, nav a:focus, nav a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
+        color: #0065fc;
+    }
+    .formulaire {
+        padding: 0% 5% 0% 5%;
+    }
+    .formulaire h1 {
+        text-align: justify;
+        font-size: 24px;
+        width: 100%; 
+    }
+    .formulaire p {  
+        font-size: 18px; 
+        margin: 10px 0px 15px 0px;
+    }
+    form {
+        margin: 40px 0px 10px 5px;
+    }
+    .search {
+        width: 100%;
+    }
+    button {
+        padding: 12px;
+        margin-left: -15px;
+        border-radius: 10px 10px 10px 10px ;
+    }
+    .button-text {
+        display: none;
+    }
+    .searchfirst i {
+        display: block;
+    }
+    .filtres {
+        flex-direction: column;
+    }
+    .filtres h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .filtres ul {   
+       padding-left: 0px;
+       margin-top: 0px;
+    }
+    .filtres li {   
+        font-size: 18px;
+        padding-right: 10px;
+    }
+    .filtres i {
+        margin-right: 5px;
+    }
+    .filtres a {
+        margin-right: 0px;
+        font-size: 16px;
+    }
+    .info {
+        width: 100%;
+    }
+    .info p {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .marseille {
+        flex-direction:column;
+        padding: 0px;
+    }
+    .lodging:nth-child(1) {
+        order: 2;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        width: 100%;
+        background-color: white;
+    }
+    .h-all {
+        flex-direction:column;
+        width: 100%;
+    }
+    .lodging .card {
+        width: 97%;
+        box-shadow: none;
+    }
+    .popular:nth-child(2) {
+        order: 1;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .activity:nth-child(3) {
+        order: 3;
+        flex-direction:column;
+        flex-wrap: nowrap;
+    }
+
+    footer {
+        flex-direction:column;
+        padding-left: 6%;
+    }
+    .propos {
+        margin-left: 0%;
+    }
+
+    
+   
+}
