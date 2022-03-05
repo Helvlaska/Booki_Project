@@ -1,34 +1,52 @@
 @media screen and (max-width:768px) {
     body{
+        width: 100%;
         font-size: 18px;
     }
+
+    /********** HEADER **********/
+
     header {
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
         padding: 0%;
+        width: 100%;
     }
     nav {
         width: 100%;
     }
     nav ul {
         justify-content: space-around;
+        width: 100%;
         padding: 0%;
     }
+    nav li {
+        width: 50%;
+    }
     nav a {
-        padding: 30px 54px 10px 54px;
+        justify-content: center;
+        width: 99%;
+        padding: 30px 0px 10px 0px ;
         font-weight: normal;
     }
     nav a:visited {
         border-top: none;
-        border-bottom: 3px solid #0065fc;
     }
-    nav a:active, nav a:focus, nav a:hover {
+    nav a:hover, nav a:focus {
+        border-top: none;
+        color: black;
+    }
+    nav a:active {
         border-top: none;
         border-bottom: 3px solid #0065fc;
-        color: #0065fc;
+        color: #0065fc; 
     }
+
+    /********** SECTION FORMULAIRE **********/
+
     .formulaire {
+        width: 100%;
         padding: 0% 5% 0% 5%;
     }
     .formulaire h1 {
@@ -37,14 +55,15 @@
         width: 100%; 
     }
     .formulaire p {  
-        font-size: 18px; 
-        margin: 10px 0px 15px 0px;
+        font-size: 16px; 
+        margin: 13px 0px 40px 0px;
     }
     form {
-        margin: 40px 0px 10px 5px;
+        margin: 0px 0px 10px 5px;
     }
     .search {
         width: 100%;
+        margin-bottom: 30px;
     }
     button {
         padding: 12px;
@@ -85,11 +104,23 @@
     .info p {
         text-align: justify;
         font-size: 16px;
+        margin-left: 10px;
     }
+
+    /********** SECTION MARSEILLE **********/
 
     .marseille {
         flex-direction:column;
+        width: 100%;
         padding: 0px;
+    }
+    .marseille h1 {
+        font-size: 20px;
+        padding: 10px 20px 20px 20px;
+    }
+    .popular h1 {
+        width: 100%;
+        padding: 30px 20px 10px 20px;
     }
     .lodging:nth-child(1) {
         order: 2;
@@ -100,30 +131,126 @@
     }
     .h-all {
         flex-direction:column;
+        align-items: center;
         width: 100%;
     }
     .lodging .card {
-        width: 97%;
-        box-shadow: none;
+        width: 90%;
+        margin: 2%;
+    }
+    .describ h3, .hplus {
+        font-size: 15px;
+    }
+    .hplus {
+        padding-left: 20px ;
+    }
+    .describ p {
+        font-size: 13px;
+    }
+    .describ .star {
+        font-size: 10px;
     }
     .popular:nth-child(2) {
         order: 1;
         flex-direction:column;
         flex-wrap: nowrap;
         width: 100%;
+        border-radius: 0px;  
     }
+    .p-all {
+        width: 100%;
+        align-items: center;
+        padding: 15px 0px 30px 0px;
+    }
+    .popular .card {
+        margin: 6px 0px 6px 0px;
+        padding: 5px;
+    }
+    .popular .card img{
+        width: 40%;
+        height: 134px;
+    }
+    .popular .describ {
+        width: 60%;
+        padding: 2% 5%;
+    }
+    
     .activity:nth-child(3) {
         order: 3;
         flex-direction:column;
         flex-wrap: nowrap;
+        width: 100%;
     }
+    .activity h3 {
+        font-size: 15px;
+        padding: 0px ;
+        margin: 3% 0% 3% 3% ;
+    }
+    .a-all {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .bigcard {
+        width: 90%;
+        height: 141px;
+        margin: 10px;
+    }
+    .smallcard-container {
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .smallcard {
+        width: 90%;
+        height: 141px;
+        margin: 10px;
+    }
+    .bigcard img {
+        height: 100px;
+    }
+    .smallcard img {
+        height: 100px;
+    }
+    .pom {
+        height: auto;
+    }
+    .fri {
+        height: auto;
+    }
+    .notre {
+        height: auto;
+    }
+    .parc {
+        height: auto;
+    }
+    .fat {
+        height: auto;
+    }
+    
+    /********** FOOTER **********/
 
     footer {
         flex-direction:column;
-        padding-left: 6%;
+        font-size: 14px;
+        width: 100%;
+        padding: 45px 0px 20px 20px;
+    }
+    footer h2 {
+        margin-bottom: 15px;
     }
     .propos {
-        margin-left: 0%;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    .heberg {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .help {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     
