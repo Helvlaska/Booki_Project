@@ -388,6 +388,13 @@ footer ul {
 footer li {
     margin: 10px 0px;
 }
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover, footer a:focus, footer a:active {
+    color: #0065fc;
+}
 .propos {
     width: 35%;
     margin-left: 3%;
