@@ -116,11 +116,13 @@
     }
     .marseille h1 {
         font-size: 20px;
-        padding: 10px 20px 20px 20px;
+        padding: 15px 0px 0px 20px;
+        margin-bottom: 15px;
     }
     .popular h1 {
         width: 100%;
-        padding: 30px 20px 10px 20px;
+        padding: 15px 0px 0px 0px;
+        margin-bottom: 0px;
     }
     .lodging:nth-child(1) {
         order: 2;
@@ -128,11 +130,13 @@
         flex-wrap: nowrap;
         width: 100%;
         background-color: white;
+        padding: 0px;
     }
     .h-all {
         flex-direction:column;
         align-items: center;
         width: 100%;
+        margin-bottom: 20px;
     }
     .lodging .card {
         width: 90%;
@@ -252,7 +256,4 @@
         width: 100%;
         margin-bottom: 20px;
     }
-
-    
-   
 }
