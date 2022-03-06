@@ -1,5 +1,39 @@
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6 {
+    margin:0;padding:0
+}
+html {
+    box-sizing:border-box
+}
+*,*::before,*::after {
+    box-sizing:inherit
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal
+}
+ul {
+    list-style:none
+}
+button,input,select {
+    margin:0
+}
+img,video {
+    height:auto;
+    max-width:100%
+}
+iframe {
+    border:0
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+td,th {
+    padding:0
+}
 
+/********** ALL **********/
 body {
     width: 100%;
     margin: 0%;
@@ -59,6 +93,7 @@ form {
 }
 .search {
     display: flex;
+    margin-bottom: 10px;
 }
 label {
     border: 1px solid #F2F2F2;
@@ -149,16 +184,19 @@ button {
     width: 100%;
     font-weight: 800;
     font-size: 15px;
+    margin-bottom: 15px;
 }
 .popular h1 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 .lodging {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
     width: 70%;
-    padding: 1%;
+    padding: 20px;
     margin-bottom: 20px;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -167,8 +205,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 70%;
-    margin-bottom: 40px;
 }
 .lodging .card {
     display: flex;
@@ -178,9 +214,8 @@ button {
     box-shadow: 3px 3px 10px lightgray;
     border-radius: 15px;
     width: 30%;
-    height: 45%;
     padding: 4px;
-    margin: 1%;
+    margin-bottom: 20px;
 }
 .lodging .card img {
     width: 100%;
@@ -200,6 +235,7 @@ button {
     margin: 3% 0%
 }
 .describ p {
+    font-size: 11px;
     width: 100%;
     margin: 3% 0%;
 }
@@ -210,7 +246,8 @@ button {
     color: #0065fc;
 }
 .popular {
-    width: 25%;
+    width: 28%;
+    padding: 20px;
     margin-bottom: 20px;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -226,13 +263,13 @@ button {
     background-color: white;
     box-shadow: 3px 3px 10px lightgray;
     border-radius: 15px;
-    width: 90%;
-    height: 32%;
-    margin: 6% 5% 6% 5%;
+    width: 100%;
+    height: 30%;
+    padding: 3px;
 }
 .popular .card img{
     width: 40%;
-    height: 125px;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
 }
@@ -240,7 +277,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 58%;
     padding: 5%;
 }
 .activity {
