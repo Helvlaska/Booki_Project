@@ -209,6 +209,7 @@ button {
 .lodging a {
     width: 30%;
     text-decoration: none;
+    color: black;
 }
 .lodging .card {
     display: flex;
@@ -220,6 +221,9 @@ button {
     width: 100%;
     padding: 4px;
     margin-bottom: 20px;
+}
+.lodging .card:hover, .lodging .card:focus, .lodging .card:active {
+    color: #0065fc;
 }
 .lodging .card img {
     width: 100%;
@@ -234,9 +238,11 @@ button {
     font-size: 12px;
     font-weight: 800;
     text-decoration: none;
-    color: black;
     width: 100%;
     margin: 3% 0%
+}
+.hplus:hover, .hplus:focus, .hplus:active {
+    color: #0065fc;
 }
 .describ p {
     font-size: 11px;
@@ -249,6 +255,7 @@ button {
 .describ .fa-star.blue {
     color: #0065fc;
 }
+
 .popular {
     width: 28%;
     padding: 20px;
@@ -266,6 +273,13 @@ button {
     width: 100%;
     height: 30%;
     text-decoration: none;
+    color: black;
+}
+.popular h1>a {
+    width: auto;
+}
+.popular h1>a:hover, .popular h1>a:focus, .popular h1>a:active {
+    color: #0065fc;
 }
 .popular .card {
     display: flex;
@@ -281,6 +295,9 @@ button {
     height: 100%;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
+}
+.popular .card:hover, .popular .card:focus, .popular .card:active {
+    color: #0065fc;
 }
 .popular .describ {
     display: flex;
@@ -321,6 +338,9 @@ button {
     box-shadow: 3px 3px 10px lightgray;
     border-radius: 15px;
 }
+.bigcard:hover, .bigcard:focus, .bigcard:active {
+    color: #0065fc;
+}
 .smallcard-container {
     display: flex;
     flex-direction: column;
@@ -341,6 +361,9 @@ button {
     background-color: white;
     box-shadow: 3px 3px 10px lightgray;
     border-radius: 15px;
+}
+.smallcard:hover, .smallcard:focus, .smallcard:active {
+    color: #0065fc;
 }
 .pom {
     height: 170px;
