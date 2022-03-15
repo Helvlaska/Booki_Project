@@ -34,6 +34,12 @@ td,th {
 }
 
 /********** ALL **********/
+#bloc-page {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 body {
     width: 100%;
     margin: 0%;
